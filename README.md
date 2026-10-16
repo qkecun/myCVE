@@ -8,7 +8,7 @@ Vulnerability research reports and CVE submissions by **Solitude** (GitHub: qkec
 
 - Vendor Homepage: https://www.sourcecodester.com/php/18232/food-order-system.html
 - Software Link: https://www.sourcecodester.com/sites/default/files/download/katojkalemba/web.zip
-- Test Environment: Apache 2.4.39 / PHP 7.3.4 / MySQL 5.7.26 (Windows 11), deployed at `http://localhost/web/`
+- Test Environment: Apache 2.4.39 / PHP 7.3.4 / MySQL 5.7.26 (Windows 11), deployed at `http://10.53.143.242/web/`
 - Audit Date: 2026-10-16
 
 ## Findings Index
@@ -19,13 +19,9 @@ Vulnerability research reports and CVE submissions by **Solitude** (GitHub: qkec
 | 2 | /order.php | SQL Injection (Boolean + Time + UNION), unauthenticated |
 | 3 | /admin/delete_category.php | Arbitrary File Deletion (path traversal), unauthenticated |
 | 4 | /admin/delete.php | Arbitrary File Deletion (path traversal), unauthenticated |
-| 5 | /admin/delete_admin.php | Unauthenticated Admin Deletion |
-| 6 | /admin/add_food.php | SQL Injection (INSERT, boolean) |
-| 7 | /admin/update_food.php | SQL Injection (UPDATE, time + boolean) |
-| 8 | /admin/update_category.php | SQL Injection (UPDATE, boolean) |
-| 9 | /admin/edit_admin.php | SQL Injection (SELECT + UPDATE) |
-| 10 | /admin/change_pwd.php | SQL Injection (SELECT) |
-| 11 | /admin/add_category.php | SQL Injection (INSERT, boolean) |
+| 5 | /admin/delete_admin.php | Unauthenticated Admin Deletion (surgical, id-targeted) |
+
+*(Issues #6–#11 — admin-side SQL injection — were closed as not planned by the researcher.)*
 
 ## Methodology Notes
 
