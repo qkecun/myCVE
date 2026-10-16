@@ -21,7 +21,6 @@ Vulnerability research reports and CVE submissions by **Solitude** (GitHub: qkec
 | 4 | /admin/delete.php | Arbitrary File Deletion (path traversal), unauthenticated |
 | 5 | /admin/delete_admin.php | Unauthenticated Admin Deletion (surgical, id-targeted) |
 
-*(Issues #6–#11 — admin-side SQL injection — were closed as not planned by the researcher.)*
 
 ## Methodology Notes
 
